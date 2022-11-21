@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "188C8PRJeDy2fsjRmlAdM3vKiRQ7ClAxa1c+gCTE00a65UcXj96KZc3yS26iQTJHB04GbMKxGapsh28x+G2hmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512"
+  ],
+  "logs": []
+}

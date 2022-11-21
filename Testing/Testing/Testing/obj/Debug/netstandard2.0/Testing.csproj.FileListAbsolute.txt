@@ -1,0 +1,16 @@
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\Testing.deps.json
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\Testing.dll
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\ref\Testing.dll
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\bin\Debug\netstandard2.0\Testing.pdb
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.csproj.AssemblyReference.cache
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.AssemblyInfoInputs.cache
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.AssemblyInfo.cs
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.csproj.CoreCompileInputs.cache
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.dll
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\ref\Testing.dll
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Testing.pdb
+C:\Users\RX 580 8GB\source\repos\Testing\Testing\Testing\obj\Debug\netstandard2.0\Page1.xaml.g.cs
