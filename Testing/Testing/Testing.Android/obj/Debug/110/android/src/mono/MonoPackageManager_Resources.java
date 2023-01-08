@@ -4,8 +4,8 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Testing.Android.dll" comes first in this list. */
 		"Testing.Android.dll",
 		"FormsViewGroup.dll",
+		"Re-Books_App.dll",
 		"SuaveControls.DynamicStackLayout.dll",
-		"Testing.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

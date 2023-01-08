@@ -10,7 +10,8 @@ namespace Testing
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Navig();
+
         }
 
         protected override void OnStart()

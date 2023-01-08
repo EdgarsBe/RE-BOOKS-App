@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="Testing.Navig"
+       xmlns:local="clr-namespace:Testing"
+       BackgroundColor="#33383b"
+       FlyoutBackgroundColor="#34344A"
+       Shell.FlyoutWidth="250"
+       >
+        <FlyoutItem Title="ReBooks"
+                   Shell.TabBarIsVisible="False"
+                   FlyoutDisplayOptions="AsMultipleItems">
+               <ShellContent Icon="profile" Title="User Profile" IsTabStop="True" ContentTemplate="{DataTemplate local:UserProfile}"/>
+               <ShellContent Icon="search" Title="Search" IsTabStop="True" ContentTemplate="{DataTemplate local:SearchPage}"/>
+               <ShellContent Icon="Books" Title="Books" IsTabStop="True" ContentTemplate="{DataTemplate local:MainPage}"/>
+               <ShellContent Icon="info" Title="About Us" IsTabStop="True" ContentTemplate="{DataTemplate local:AboutUsPage}"/>
+               <ShellContent Icon="exit" Title="Logout" IsTabStop="True" ContentTemplate="{DataTemplate local:AboutUsPage}"/>  
+        </FlyoutItem>
+</Shell>

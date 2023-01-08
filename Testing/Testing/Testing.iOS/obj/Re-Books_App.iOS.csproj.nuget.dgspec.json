@@ -42,6 +42,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Xam.Plugin.Iconize.FontAwesome": {
+              "target": "Package",
+              "version": "[3.5.0.129, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Testing.App.xaml", "App.xaml", typeof(global::Testing.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Re-Books_App.App.xaml", "App.xaml", typeof(global::Testing.App))]
 
 namespace Testing {
     

@@ -11,6 +11,48 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xam.Plugin.Iconize/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        }
+      },
+      "Xam.Plugin.Iconize.FontAwesome/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugin.Iconize": "3.5.0.129",
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-brands.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-regular.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-solid.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -174,6 +216,48 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugin.Iconize/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        }
+      },
+      "Xam.Plugin.Iconize.FontAwesome/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugin.Iconize": "3.5.0.129",
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-brands.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-regular.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-solid.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -341,6 +425,48 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xam.Plugin.Iconize/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        }
+      },
+      "Xam.Plugin.Iconize.FontAwesome/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugin.Iconize": "3.5.0.129",
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-brands.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-regular.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-solid.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -504,6 +630,48 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugin.Iconize/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.dll": {}
+        }
+      },
+      "Xam.Plugin.Iconize.FontAwesome/3.5.0.129": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugin.Iconize": "3.5.0.129",
+          "Xamarin.Forms": "3.5.0.274416"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-brands.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-regular.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-solid.ttf": {
+            "buildAction": "BundleResource",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -708,6 +876,72 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugin.Iconize/3.5.0.129": {
+      "sha512": "XLWwU+ZRRs1tM8quKDD3ZgdYgAftxyk9LhEQ8vdji8C9HsqVF+1El9Fdw9WbU/VBxGVoM5GWQ0tDb2uuT1QU7w==",
+      "type": "package",
+      "path": "xam.plugin.iconize/3.5.0.129",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Plugin.Iconize.dll",
+        "lib/monoandroid90/Plugin.Iconize.pdb",
+        "lib/monoandroid90/Plugin.Iconize.xml",
+        "lib/net472/Plugin.Iconize.dll",
+        "lib/net472/Plugin.Iconize.pdb",
+        "lib/net472/Plugin.Iconize.xml",
+        "lib/netstandard1.3/Plugin.Iconize.dll",
+        "lib/netstandard1.3/Plugin.Iconize.pdb",
+        "lib/netstandard1.3/Plugin.Iconize.xml",
+        "lib/netstandard2.0/Plugin.Iconize.dll",
+        "lib/netstandard2.0/Plugin.Iconize.pdb",
+        "lib/netstandard2.0/Plugin.Iconize.xml",
+        "lib/uap10.0.16299/Plugin.Iconize.dll",
+        "lib/uap10.0.16299/Plugin.Iconize.pdb",
+        "lib/uap10.0.16299/Plugin.Iconize.pri",
+        "lib/uap10.0.16299/Plugin.Iconize.xml",
+        "lib/xamarinios10/Plugin.Iconize.dll",
+        "lib/xamarinios10/Plugin.Iconize.pdb",
+        "lib/xamarinios10/Plugin.Iconize.xml",
+        "xam.plugin.iconize.3.5.0.129.nupkg.sha512",
+        "xam.plugin.iconize.nuspec"
+      ]
+    },
+    "Xam.Plugin.Iconize.FontAwesome/3.5.0.129": {
+      "sha512": "ETVTbNKZMij1/4DmqH1jMmS5nOlqYBj5wqz364BoDsZHYYyHwzS5nuEWw/L+3W/U00wbNYkbNvdydKdI1YaIrQ==",
+      "type": "package",
+      "path": "xam.plugin.iconize.fontawesome/3.5.0.129",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-brands.ttf",
+        "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-regular.ttf",
+        "contentFiles/any/Xamarin.iOS10/Resources/iconize-fontawesome-solid.ttf",
+        "lib/monoandroid90/Plugin.Iconize.FontAwesome.dll",
+        "lib/monoandroid90/Plugin.Iconize.FontAwesome.pdb",
+        "lib/monoandroid90/Plugin.Iconize.FontAwesome.xml",
+        "lib/net472/Plugin.Iconize.FontAwesome.dll",
+        "lib/net472/Plugin.Iconize.FontAwesome.pdb",
+        "lib/net472/Plugin.Iconize.FontAwesome.xml",
+        "lib/netstandard1.3/Plugin.Iconize.FontAwesome.dll",
+        "lib/netstandard1.3/Plugin.Iconize.FontAwesome.pdb",
+        "lib/netstandard1.3/Plugin.Iconize.FontAwesome.xml",
+        "lib/netstandard2.0/Plugin.Iconize.FontAwesome.dll",
+        "lib/netstandard2.0/Plugin.Iconize.FontAwesome.pdb",
+        "lib/netstandard2.0/Plugin.Iconize.FontAwesome.xml",
+        "lib/uap10.0.16299/Plugin.Iconize.FontAwesome.dll",
+        "lib/uap10.0.16299/Plugin.Iconize.FontAwesome.pdb",
+        "lib/uap10.0.16299/Plugin.Iconize.FontAwesome.pri",
+        "lib/uap10.0.16299/Plugin.Iconize.FontAwesome.xml",
+        "lib/uap10.0.16299/Plugin.Iconize.FontAwesome/iconize-fontawesome-brands.ttf",
+        "lib/uap10.0.16299/Plugin.Iconize.FontAwesome/iconize-fontawesome-regular.ttf",
+        "lib/uap10.0.16299/Plugin.Iconize.FontAwesome/iconize-fontawesome-solid.ttf",
+        "lib/xamarinios10/Plugin.Iconize.FontAwesome.dll",
+        "lib/xamarinios10/Plugin.Iconize.FontAwesome.pdb",
+        "lib/xamarinios10/Plugin.Iconize.FontAwesome.xml",
+        "xam.plugin.iconize.fontawesome.3.5.0.129.nupkg.sha512",
+        "xam.plugin.iconize.fontawesome.nuspec"
       ]
     },
     "Xamarin.Essentials/1.6.1": {
@@ -986,6 +1220,7 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "Re-Books_App >= 1.0.0",
+      "Xam.Plugin.Iconize.FontAwesome >= 3.5.0.129",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2515"
     ]
@@ -1032,6 +1267,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Xam.Plugin.Iconize.FontAwesome": {
+            "target": "Package",
+            "version": "[3.5.0.129, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.1, )"
