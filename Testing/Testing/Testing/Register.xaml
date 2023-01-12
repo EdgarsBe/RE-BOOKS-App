@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Testing.Register"
+             Shell.FlyoutBehavior="Disabled"
+             BackgroundColor="#8d99ae">
+    <Shell.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Style="{StaticResource TopBar}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Re-" TextColor="White"/>
+                        <Span Text="Books" TextColor="#5383d3"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+    </Shell.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Padding="30" FontSize="40" HorizontalOptions="Center">Reģistrācija</Label>
+            </StackLayout>
+            <StackLayout Padding="50" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                <Label Text="E-Pasts:"/>
+                <Entry Placeholder="E-Pasts"/>
+                <Label Text="Atkārtot e-pastu:"/>
+                <Entry Placeholder="Atkārtot e-pastu"/>
+                <Label Text="Lietotājvārds:"/>
+                <Entry Placeholder="lietotājvārds"/>
+                <Label Text="Parole:"/>
+                <Entry Placeholder="Parole" IsPassword="True" />
+                <Label Text="Atkārtot paroli:"/>
+                <Entry Placeholder="Atkārtot paroli" IsPassword="True" />
+                <Button Padding="15" Text="Reģistrēties" Clicked="RegClick"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

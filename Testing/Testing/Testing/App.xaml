@@ -8,6 +8,29 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="FontSize" Value="36"/>
             </Style>
+            
+            <x:String x:Key="info">&#xf05a;</x:String>
+            <x:String x:Key="profile">&#xf007;</x:String>
+            <x:String x:Key="search">&#xf002;</x:String>
+            <x:String x:Key="books">&#xf02d;</x:String>
+            <x:String x:Key="logout">&#xf08b;</x:String>
+            <x:String x:Key="bookmark">&#xf02e;</x:String>
+            
+
+            <Style Class="FlyoutItemLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontFamily" Value="font"/>
+            </Style>
+            
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="font"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="FontFamily" Value="font"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

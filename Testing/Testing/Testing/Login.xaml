@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+              xmlns:pages="clr-namespace:Testing"
+             x:Class="Testing.Login"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#8d99ae">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#33383b">
+                <Label Style="{StaticResource TopBar}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Re-" TextColor="White"/>
+                            <Span Text="Books" TextColor="#5383d3"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Frame>
+            <StackLayout>
+                <StackLayout>
+                    <Label Padding="50" FontSize="40" HorizontalOptions="Center">Pieslēgties</Label>
+                </StackLayout>
+                <StackLayout Padding="50" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Lietotājvārds:"/>
+                    <Entry x:Name="usernameInput" Text="" Placeholder="lietotājvārds"/>
+                    <Label Text="parole:"/>
+                    <Entry x:Name="passwordInput" Text="" Placeholder="parole" IsPassword="True" />
+                    <Button Text="Login" Clicked="LoginClick"/>
+                    <Label Text="Register" HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="Error" TextColor="Red" Text="Jūs nepareizi esat ievadijuši e-pastu / lietotājvārdu!" IsVisible="false"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

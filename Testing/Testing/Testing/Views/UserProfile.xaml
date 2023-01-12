@@ -3,13 +3,68 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Testing.UserProfile"
              BackgroundColor="#8d99ae">
+    <Shell.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Style="{StaticResource TopBar}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Re-" TextColor="White"/>
+                        <Span Text="Books" TextColor="#5383d3"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+    </Shell.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand">
-                
-            </Label>
+            <StackLayout Orientation="Vertical" Spacing="0">
+                <StackLayout Spacing="0">
+                    <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                            <Label FontSize="30" FontFamily="FAS">&#xf007;</Label>
+                            <Label FontSize="20" FontFamily="font">Vārds</Label>
+                        </StackLayout>
+                    </Frame>
+                    <BoxView HeightRequest="1" Color="#98a3b6"/>
+                </StackLayout>
+                <StackLayout Spacing="0">
+                    <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                            <Label FontSize="30" FontFamily="FAS">&#xf0e0;</Label>
+                            <Label FontSize="20">Epasts</Label>
+                        </StackLayout>
+                    </Frame>
+                    <BoxView HeightRequest="1" Color="#98a3b6"/>
+                </StackLayout>
+                <StackLayout Spacing="0">
+                    <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                            <Label FontSize="30" FontFamily="FAS">&#xf023;</Label>
+                            <Label FontSize="20">Parole</Label>
+                        </StackLayout>
+                    </Frame>
+                    <BoxView HeightRequest="1" Color="#98a3b6"/>
+                </StackLayout>
+                <StackLayout Spacing="0">
+                    <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                            <Label FontSize="30" FontFamily="FAS">&#xf2b9;</Label>
+                            <Label FontSize="20">Admin / User</Label>
+                        </StackLayout>
+                    </Frame>
+                    <BoxView HeightRequest="1" Color="#98a3b6"/>
+                </StackLayout>
+                <BoxView HeightRequest="380" Color="#8d99ae"/>
+                <StackLayout Spacing="50" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                    <Button BackgroundColor="Red" BorderColor="DarkRed" BorderWidth="1" VerticalOptions="End" WidthRequest="160" TextColor="Black" Text="Dzēst Profilu"/>
+                    <Button BackgroundColor="LightYellow" BorderColor="Yellow" BorderWidth="1" VerticalOptions="End" WidthRequest="160" TextColor="Black" Text="Labot Profilu"/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

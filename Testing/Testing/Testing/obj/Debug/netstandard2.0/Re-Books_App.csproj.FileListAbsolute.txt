@@ -17,3 +17,6 @@ C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testi
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\SearchPage.xaml.g.cs
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\UserProfile.xaml.g.cs
+C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Login.xaml.g.cs
+C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Register.xaml.g.cs
+C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\Bookmarked.xaml.g.cs

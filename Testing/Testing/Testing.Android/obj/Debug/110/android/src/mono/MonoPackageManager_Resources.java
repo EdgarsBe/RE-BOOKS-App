@@ -3,9 +3,25 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Testing.Android.dll" comes first in this list. */
 		"Testing.Android.dll",
+		"BCrypt.Net-Next.dll",
+		"BouncyCastle.Crypto.dll",
 		"FormsViewGroup.dll",
+		"Google.Protobuf.dll",
+		"K4os.Compression.LZ4.dll",
+		"K4os.Compression.LZ4.Streams.dll",
+		"K4os.Hash.xxHash.dll",
+		"MySql.Data.dll",
+		"MySqlConnector.dll",
 		"Re-Books_App.dll",
+		"Renci.SshNet.dll",
+		"SshNet.Security.Cryptography.dll",
 		"SuaveControls.DynamicStackLayout.dll",
+		"System.Configuration.ConfigurationManager.dll",
+		"System.Diagnostics.DiagnosticSource.dll",
+		"System.Security.AccessControl.dll",
+		"System.Security.Permissions.dll",
+		"System.Security.Principal.Windows.dll",
+		"Ubiety.Dns.Core.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",
@@ -58,6 +74,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.VersionedParcelable.dll",
 		"Xamarin.AndroidX.ViewPager.dll",
 		"Xamarin.AndroidX.ViewPager2.dll",
+		"Xamarin.CommunityToolkit.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",
@@ -65,6 +82,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
+		"Zstandard.Net.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

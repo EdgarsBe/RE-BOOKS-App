@@ -7,13 +7,107 @@
        FlyoutBackgroundColor="#34344A"
        Shell.FlyoutWidth="250"
        >
-        <FlyoutItem Title="ReBooks"
-                   Shell.TabBarIsVisible="False"
-                   FlyoutDisplayOptions="AsMultipleItems">
-               <ShellContent Icon="profile" Title="User Profile" IsTabStop="True" ContentTemplate="{DataTemplate local:UserProfile}"/>
-               <ShellContent Icon="search" Title="Search" IsTabStop="True" ContentTemplate="{DataTemplate local:SearchPage}"/>
-               <ShellContent Icon="Books" Title="Books" IsTabStop="True" ContentTemplate="{DataTemplate local:MainPage}"/>
-               <ShellContent Icon="info" Title="About Us" IsTabStop="True" ContentTemplate="{DataTemplate local:AboutUsPage}"/>
-               <ShellContent Icon="exit" Title="Logout" IsTabStop="True" ContentTemplate="{DataTemplate local:AboutUsPage}"/>  
-        </FlyoutItem>
+    <Shell.Resources>
+        <Style TargetType="Layout"
+               ApplyToDerivedTypes="True"
+               Class="FlyoutItemLayoutStyle">
+            <Setter
+            Property="HeightRequest"
+            Value="44" />
+            <Setter
+            Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup
+                    x:Name="CommonStates">
+                        <VisualState
+                        x:Name="Normal">
+                            <VisualState.Setters>
+
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                        x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter
+                                Property="BackgroundColor"
+                                Value="#134b5f" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                        x:Name="Disabled">
+                            <VisualState.Setters>
+
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </Shell.Resources>
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <StackLayout Spacing="0">
+                <Frame BackgroundColor="#33383b">
+                    <StackLayout>
+                        <Label Style="{StaticResource TopBar}">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Re-" TextColor="White"/>
+                                    <Span Text="Books" TextColor="#5383d3"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label Padding="10">Lietotājvārds:</Label>
+                        <Label Padding="10">E-pasts:</Label>
+                    </StackLayout>
+                </Frame>
+                <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Color="Black"/>
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+
+    <ShellItem Route="Login" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate local:Login}"/>
+    </ShellItem>
+
+    <FlyoutItem Title="User Profile">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource profile}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate local:UserProfile}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Search">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource search}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate local:SearchPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Books">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource books}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+    </FlyoutItem>
+    <FlyoutItem Title="About Us" > 
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource info}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate local:AboutUsPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Bookmarked Books">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource bookmark}"/>
+        </FlyoutItem.Icon>
+        <ShellContent ContentTemplate="{DataTemplate local:Bookmarked}"/>
+    </FlyoutItem>
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <Frame BackgroundColor="#34344A" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label HeightRequest="30" Text="Re-Books © 2022" FontAttributes="None"
+                   VerticalOptions="End" HorizontalOptions="Center"/>
+            </Frame>
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
 </Shell>
