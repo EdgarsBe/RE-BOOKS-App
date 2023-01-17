@@ -28,16 +28,17 @@
             </StackLayout>
             <StackLayout Padding="50" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
                 <Label Text="E-Pasts:"/>
-                <Entry Placeholder="E-Pasts"/>
+                <Entry x:Name="Email" Placeholder="E-Pasts"/>
                 <Label Text="Atkārtot e-pastu:"/>
-                <Entry Placeholder="Atkārtot e-pastu"/>
+                <Entry x:Name="RepEmail" Placeholder="Atkārtot e-pastu"/>
                 <Label Text="Lietotājvārds:"/>
-                <Entry Placeholder="lietotājvārds"/>
+                <Entry x:Name="Username" Placeholder="lietotājvārds"/>
                 <Label Text="Parole:"/>
-                <Entry Placeholder="Parole" IsPassword="True" />
+                <Entry x:Name="Pass" Placeholder="Parole" IsPassword="True" />
                 <Label Text="Atkārtot paroli:"/>
-                <Entry Placeholder="Atkārtot paroli" IsPassword="True" />
+                <Entry x:Name="RepPass" Placeholder="Atkārtot paroli" IsPassword="True" />
                 <Button Padding="15" Text="Reģistrēties" Clicked="RegClick"/>
+                <Label x:Name="Error" TextColor="Red" Text="" IsVisible="false"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

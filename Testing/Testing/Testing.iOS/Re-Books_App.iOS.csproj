@@ -126,9 +126,6 @@
     <PackageReference Include="BCrypt.Net-Next">
       <Version>4.0.3</Version>
     </PackageReference>
-    <PackageReference Include="MySql.Data">
-      <Version>8.0.22</Version>
-    </PackageReference>
     <PackageReference Include="MySqlConnector">
       <Version>2.2.5</Version>
     </PackageReference>

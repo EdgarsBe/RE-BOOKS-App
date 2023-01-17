@@ -48,10 +48,6 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.22, )"
-            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.2.5, )"

@@ -63,9 +63,6 @@
     <PackageReference Include="DynamicStackLayout">
       <Version>2017.12.4</Version>
     </PackageReference>
-    <PackageReference Include="MySql.Data">
-      <Version>8.0.22</Version>
-    </PackageReference>
     <PackageReference Include="MySqlConnector">
       <Version>2.2.5</Version>
     </PackageReference>

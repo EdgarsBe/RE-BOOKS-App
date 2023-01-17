@@ -27,7 +27,7 @@
                     <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                             <Label FontSize="30" FontFamily="FAS">&#xf007;</Label>
-                            <Label FontSize="20" FontFamily="font">Vārds</Label>
+                            <Label x:Name="user" FontSize="20" FontFamily="font"/>
                         </StackLayout>
                     </Frame>
                     <BoxView HeightRequest="1" Color="#98a3b6"/>
@@ -36,7 +36,7 @@
                     <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                             <Label FontSize="30" FontFamily="FAS">&#xf0e0;</Label>
-                            <Label FontSize="20">Epasts</Label>
+                            <Label x:Name="email" FontSize="20"/>
                         </StackLayout>
                     </Frame>
                     <BoxView HeightRequest="1" Color="#98a3b6"/>

@@ -50,10 +50,6 @@
               "target": "Package",
               "version": "[2017.12.4, )"
             },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.22, )"
-            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.2.5, )"
@@ -117,10 +113,6 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.22, )"
             },
             "MySqlConnector": {
               "target": "Package",

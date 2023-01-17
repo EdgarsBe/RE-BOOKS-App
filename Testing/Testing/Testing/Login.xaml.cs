@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+using MySqlConnector;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,57 +11,62 @@ using Xamarin.Forms.Xaml;
 namespace Testing
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class Login : ContentPage
-{
-    public Login()
-    {
-        InitializeComponent();
-    }
 
-    public void LoginClick(object sender, EventArgs e)
-    {
-            Shell.Current.GoToAsync($"//{nameof(MainPage)}"); /*
 
-            string connectionString = "server=localhost;port=3306;database=re-books;user=root;password=0000;";
+    public partial class Login : ContentPage
+    {
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        public void LoginClick(object sender, EventArgs e)
+        {
+            string connectionString = "Server=192.168.8.108;Port=3306;User ID=armands;Password=password;Database=re-books";
             string EnteredUsername = usernameInput.Text;
             string EnteredPassword = passwordInput.Text;
 
 
-            using (var conn = new MySqlConnection(connectionString))
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                conn.Open();
+                connection.Open();
 
-                using (var command = conn.CreateCommand())
+                var command = new MySqlCommand("SELECT * FROM users WHERE username = @EnteredUsername", connection);
+                command.Parameters.AddWithValue("@EnteredUsername", EnteredUsername);
+
+                using (MySqlDataReader reader = command.ExecuteReader())
                 {
-                    command.CommandText = "SELECT * FROM users WHERE email = @EnteredUsername";
-
-                    using (var reader = command.ExecuteReader())
+                    while (reader.Read())
                     {
-                        while (reader.Read())
+                        string DBpassword = reader.GetString(3);
+                        if (BCrypt.Net.BCrypt.Verify(EnteredPassword, DBpassword)) 
                         {
-                            string DBpassword = reader.GetString(4);
-                            if (BCrypt.Net.BCrypt.Verify(EnteredPassword, DBpassword))
-                            {
-                                App.GlobalVariables.Email = reader.GetString(2);
-                                App.GlobalVariables.Username = reader.GetString(3);
-                                App.GlobalVariables.Password = EnteredPassword;
-                                App.GlobalVariables.Admin = Convert.ToBoolean(reader.GetString(5));
+                            UserData.Email = reader.GetString(1);
+                            UserData.Username = reader.GetString(2);
+                            UserData.Password = EnteredPassword;
 
-                                Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-                            }
-                            else
-                            {
-                                Error.IsVisible = true;
-                            }
+                            Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+                        }
+                        else
+                        {
+                            Error.IsVisible = true;
                         }
                     }
                 }
-            }*/
+            }
         }
+
 
     private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
     {
             await Navigation.PushAsync(new Register());
     }
 }
+
+    public class UserData
+    {
+        public static string Username { get; set; }
+        public static string Email { get; set; }
+        public static string Password { get; set; }
+    }
 }

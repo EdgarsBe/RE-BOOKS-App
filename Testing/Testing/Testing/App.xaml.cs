@@ -7,7 +7,6 @@ namespace Testing
     public partial class App : Application
     {
 
-        public static UserData GlobalVariables { get; set; }
         public App()
         {
             InitializeComponent();
@@ -27,12 +26,5 @@ namespace Testing
         protected override void OnResume()
         {
         }
-    }
-    public class UserData
-    {
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public bool Admin { get; set; }
     }
 }
