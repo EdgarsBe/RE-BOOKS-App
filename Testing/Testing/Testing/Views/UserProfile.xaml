@@ -45,7 +45,7 @@
                     <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                             <Label FontSize="30" FontFamily="FAS">&#xf023;</Label>
-                            <Label FontSize="20">Parole</Label>
+                            <Label x:Name="Pass" FontSize="20" Text="**********"/>
                         </StackLayout>
                     </Frame>
                     <BoxView HeightRequest="1" Color="#98a3b6"/>
@@ -54,15 +54,15 @@
                     <Frame  HeightRequest="40" BackgroundColor="#8d99ae" HasShadow="False">
                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                             <Label FontSize="30" FontFamily="FAS">&#xf2b9;</Label>
-                            <Label FontSize="20">Admin / User</Label>
+                            <Label x:Name="Admin" FontSize="20"/>
                         </StackLayout>
                     </Frame>
                     <BoxView HeightRequest="1" Color="#98a3b6"/>
                 </StackLayout>
                 <BoxView HeightRequest="380" Color="#8d99ae"/>
                 <StackLayout Spacing="50" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
-                    <Button BackgroundColor="Red" BorderColor="DarkRed" BorderWidth="1" VerticalOptions="End" WidthRequest="160" TextColor="Black" Text="Dzēst Profilu"/>
-                    <Button BackgroundColor="LightYellow" BorderColor="Yellow" BorderWidth="1" VerticalOptions="End" WidthRequest="160" TextColor="Black" Text="Labot Profilu"/>
+                    <Button BackgroundColor="Red" BorderColor="DarkRed" BorderWidth="1" VerticalOptions="End" WidthRequest="160" TextColor="Black" Text="Dzēst Profilu" Clicked="DeleteProfile"/>
+                    <Button BackgroundColor="LightYellow" BorderColor="Yellow" BorderWidth="1" VerticalOptions="End" WidthRequest="160" TextColor="Black" Text="Labot Profilu" Clicked="EditProfile"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

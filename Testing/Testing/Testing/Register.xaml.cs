@@ -104,6 +104,7 @@ namespace Testing
                             insert.ExecuteNonQuery();
                             await Shell.Current.GoToAsync($"//{nameof(Login)}");
                         }
+                        connection.Close();
                     }
                 }
             }

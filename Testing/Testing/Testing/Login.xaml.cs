@@ -26,30 +26,47 @@ namespace Testing
             string EnteredUsername = usernameInput.Text;
             string EnteredPassword = passwordInput.Text;
 
+            bool NULLEntry = EnteredUsername == "" && EnteredPassword == "";
+
+            if (NULLEntry)
+            {
+                Error.Text = "Laukums ir tukšš!";
+                Error.IsVisible = true;
+                return;
+            }
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
 
                 var command = new MySqlCommand("SELECT * FROM users WHERE username = @EnteredUsername", connection);
-                command.Parameters.AddWithValue("@EnteredUsername", EnteredUsername);
-
-                using (MySqlDataReader reader = command.ExecuteReader())
                 {
-                    while (reader.Read())
+                    command.Parameters.AddWithValue("@EnteredUsername", EnteredUsername);
+                    using (var reader = command.ExecuteReader())
                     {
-                        string DBpassword = reader.GetString(3);
-                        if (BCrypt.Net.BCrypt.Verify(EnteredPassword, DBpassword)) 
+                        while (reader.Read())
                         {
-                            UserData.Email = reader.GetString(1);
-                            UserData.Username = reader.GetString(2);
-                            UserData.Password = EnteredPassword;
-
-                            Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-                        }
-                        else
-                        {
-                            Error.IsVisible = true;
+                            string DBpassword = reader.GetString(3);
+                            if (BCrypt.Net.BCrypt.Verify(EnteredPassword, DBpassword))
+                            {
+                                UserData.Email = reader.GetString(1);
+                                UserData.Username = reader.GetString(2);
+                                UserData.ID = reader.GetInt32(0);
+                                if (reader.GetInt32(4) == 0)
+                                {
+                                    UserData.Admin = "User";
+                                }
+                                else
+                                {
+                                    UserData.Admin = "Admin";
+                                }
+                                Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+                            }
+                            else
+                            {
+                                Error.Text = "Jūs nepareizi esat ievadijuši e-pastu / lietotājvārdu!";
+                                Error.IsVisible = true;
+                            }
                         }
                     }
                 }
@@ -68,5 +85,7 @@ namespace Testing
         public static string Username { get; set; }
         public static string Email { get; set; }
         public static string Password { get; set; }
+        public static string Admin { get; set; }
+        public static int ID { get; set; }
     }
 }

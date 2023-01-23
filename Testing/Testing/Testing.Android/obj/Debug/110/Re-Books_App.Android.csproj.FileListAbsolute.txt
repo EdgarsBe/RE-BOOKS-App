@@ -700,7 +700,6 @@ C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testi
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\android\assets\I18N.pdb
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\android\assets\I18N.West.dll
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\android\assets\I18N.West.pdb
-C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\Re-Books_App.Android.csproj.CopyComplete
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\lp\53\jl\files.cache
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\lp\61\jl\files.cache
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\lp\67\jl\files.cache
@@ -710,3 +709,4 @@ C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testi
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\lp\87\jl\files.cache
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\lp\95\jl\files.cache
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\lp\104\jl\files.cache
+C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing.Android\obj\Debug\110\Re-Books_App.Android.csproj.CopyComplete

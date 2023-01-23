@@ -34,7 +34,7 @@
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                         </Label.GestureRecognizers>
                     </Label>
-                    <Label x:Name="Error" TextColor="Red" Text="Jūs nepareizi esat ievadijuši e-pastu / lietotājvārdu!" IsVisible="false"/>
+                    <Label x:Name="Error" TextColor="Red" Text="" IsVisible="false"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

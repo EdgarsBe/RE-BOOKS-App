@@ -58,8 +58,6 @@
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
-                        <Label x:Name="User" Padding="10" Text=""/>
-                        <Label x:Name="Email" Padding="10" Text=""/>
                     </StackLayout>
                 </Frame>
                 <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Color="Black"/>
