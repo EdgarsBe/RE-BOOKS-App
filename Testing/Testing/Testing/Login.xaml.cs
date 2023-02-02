@@ -20,13 +20,24 @@ namespace Testing
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            // Store user login status
+            Application.Current.Properties["IsLoggedIn"] = true;
+
+            // Retrieve user login status
+            var isLoggedIn = Application.Current.Properties.ContainsKey("IsLoggedIn") && (bool)Application.Current.Properties["IsLoggedIn"];
+
+        }
+
         public void LoginClick(object sender, EventArgs e)
         {
-            string connectionString = "Server=192.168.8.108;Port=3306;User ID=armands;Password=password;Database=re-books";
+            string connectionString = "Server=6.tcp.eu.ngrok.io;Port=14185;User ID=armands;Password=password;Database=re-books";
             string EnteredUsername = usernameInput.Text;
             string EnteredPassword = passwordInput.Text;
 
-            bool NULLEntry = EnteredUsername == "" && EnteredPassword == "";
+            bool NULLEntry = EnteredUsername == "" || EnteredPassword == "";
 
             if (NULLEntry)
             {

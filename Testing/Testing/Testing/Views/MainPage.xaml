@@ -6,12 +6,7 @@
              BackgroundColor="#8d99ae">
     <Shell.TitleView>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
-            
-                <Label Style="{StaticResource TopBar}">
+            <Label Style="{StaticResource TopBar}">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Re-" TextColor="White"/>
@@ -21,109 +16,16 @@
                 </Label>
         </Grid>
     </Shell.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="LogoutClick">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="FAS" Glyph="{StaticResource logout}"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <StackLayout>
         <ScrollView>
-            <StackLayout>
-                <Label Text="Jaunākais" FontSize="Title" Padding="30,10,30,10"/>
-                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" >
-                    <StackLayout Padding="20,5,20,5" Orientation="Horizontal">
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source=""/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                    </StackLayout>
-                </ScrollView>
-                <Label Text="Ieteikumi" FontSize="Title" Padding="30,10,30,10"/>
-                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" >
-                    <StackLayout Padding="20,5,20,5" Orientation="Horizontal">
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                    </StackLayout>
-                </ScrollView>
-                <Label Text="Populārs" FontSize="Title" Padding="30,10,30,10"/>
-                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" >
-                    <StackLayout Padding="20,5,20,5" Orientation="Horizontal">
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                    </StackLayout>
-                </ScrollView>
-                <Label Text="Augsti Novērtēts" FontSize="Title" Padding="30,10,30,10"/>
-                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
-                    <StackLayout Padding="20,5,20,5" Orientation="Horizontal">
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                        <StackLayout Padding="5,0,5,0">
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                    </StackLayout>
-                </ScrollView>
+            <StackLayout x:Name="Container">
             </StackLayout>
         </ScrollView>
     </StackLayout>

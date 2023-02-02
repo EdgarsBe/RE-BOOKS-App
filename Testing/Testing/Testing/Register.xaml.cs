@@ -23,7 +23,7 @@ namespace Testing
 
         //Called variables from xaml entries.
         {
-            string connectionString = "Server=192.168.8.108;Port=3306;User ID=armands;Password=password;Database=re-books";
+            string connectionString = "Server=6.tcp.eu.ngrok.io;Port=14185;User ID=armands;Password=password;Database=re-books";
             string CEmail = Email.Text;
             string CRepEmail = RepEmail.Text;
             string CUser = Username.Text;
@@ -31,19 +31,25 @@ namespace Testing
             string CRepPass = RepPass.Text;
             bool Admin = false;
 
-            //Validation for registration.
-            bool NULLEntry = CEmail == "" && CRepEmail == "" && CUser == "" && CPass == "" && CRepPass == "";
-            bool ConfirmPass = CPass == CRepPass;
-            bool ConfirmEmail = CEmail == CRepEmail;
-            bool isEmailValid = Regex.IsMatch(CEmail, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
-            bool isPasswordValid = Regex.IsMatch(CPass, @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
+            Console.WriteLine(CEmail);
+            Console.WriteLine(CRepEmail);
+            Console.WriteLine(CUser);
+            Console.WriteLine(CPass);
+            Console.WriteLine(CRepPass);
 
-            if (NULLEntry)
+            if (CEmail == null || CRepEmail == null || CUser == null || CPass == null || CRepPass == null)
             {
                 Error.Text = "Laukums ir tukšš!";
                 Error.IsVisible = true;
                 return;
             }
+
+            //Validation for registration.
+            bool ConfirmPass = CPass == CRepPass;
+            bool ConfirmEmail = CEmail == CRepEmail;
+            bool isEmailValid = Regex.IsMatch(CEmail, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+            bool isPasswordValid = Regex.IsMatch(CPass, @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
+
             if (!ConfirmPass)
             {
                 Error.Text = "Ievadītās paroles nesakrīt!";
@@ -71,6 +77,7 @@ namespace Testing
                 Error.IsVisible = true;
                 return;
             }
+
             //Password hashing using bcrypt
 
             string HashedPass = BCrypt.Net.BCrypt.HashPassword(CPass,BCrypt.Net.BCrypt.GenerateSalt());
