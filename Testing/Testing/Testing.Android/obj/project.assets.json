@@ -3495,24 +3495,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\": {},
+    "C:\\Users\\gamin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.Android\\Re-Books_App.Android.csproj",
+      "projectUniqueName": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.Android\\Re-Books_App.Android.csproj",
       "projectName": "Re-Books_App.Android",
-      "projectPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.Android\\Re-Books_App.Android.csproj",
-      "packagesPath": "C:\\Users\\RX 580 8GB\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.Android\\obj\\",
+      "projectPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.Android\\Re-Books_App.Android.csproj",
+      "packagesPath": "C:\\Users\\gamin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\RX 580 8GB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3526,8 +3526,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj": {
-              "projectPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj"
+            "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj": {
+              "projectPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj"
             }
           }
         }

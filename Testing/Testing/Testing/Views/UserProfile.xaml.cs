@@ -33,7 +33,7 @@ namespace Testing
             string Email = UserData.Email;
             string ConfirmPass = await DisplayPromptAsync("Dzēst Profilu", "Apstipriniet vai tiešam vēlaties dzēst profilu.");
 
-            string connectionString = "Server=6.tcp.eu.ngrok.io;Port=14185;User ID=armands;Password=password;Database=re-books";
+            string connectionString = "Server=2.tcp.eu.ngrok.io;Port=11249;User ID=edgars;Password=0000;Database=re-books";
 
             using (var connection = new MySqlConnection(connectionString))
             {
@@ -70,7 +70,7 @@ namespace Testing
         private async void EditProfile(object sender, EventArgs e)
         {
 
-            string connectionString = "Server=6.tcp.eu.ngrok.io;Port=14185;User ID=armands;Password=password;Database=re-books";
+            string connectionString = "Server=2.tcp.eu.ngrok.io;Port=11249;User ID=edgars;Password=0000;Database=re-books";
 
             int ID = UserData.ID;
             string action = await DisplayActionSheet("Ko jūs vēlaties mainīt?", "Cancel", null, "Lietotājvārdu", "Paroli");

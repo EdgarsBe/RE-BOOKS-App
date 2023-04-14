@@ -22,9 +22,52 @@
     </Shell.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="About Us"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Lietotāja Instrukcija"
+                           Padding="5,10,5,5"
+                           FontSize="Medium"/>
+                    <Label Text="Aplikācijā ir iespēja, kā lietotājam kurš ir piereģistrējies, meklēt, saglabāt vēlākai
+                            apskatei, filtrēt un lasīt grāmatas. Pirmā lieta ko redzēs atverot aplikāciju būs ielogošanās lapa.
+                            Tur ja lietotājam jau ir profils izveidots mājaslapā vai aplikācijā var pieslēgties savam profilam, ja lietotājs ir aizmirsis paroli viņš var uzspiest uz aizmirsu paroli un uz e-pastu viņam aizsutīsjaunu pagaidu paroli. Ja lietotājam nav izveidota profila lietotājs var spiest uz pogas Reģistrēties, kas aizvedīs uz reģistrācijas lapu. Šeit lietotājs var reģistrēt sev jaunu kontu, bet kad reģistrējas pārliecināties par to ka e-pasts un lietotājvārds nav jau aizņemt un lai parole ir pietiekami spēcīga. Ja reģistrācija ir veiksmīga jums parādīsies teksts, kas par to paziņos un jūs varēsiet pāriet atpakaļ uz ielogošanās un piekļūt savam profilam."
+                            Padding="5,10,5,10"/>
+                    <Label Text="Galvenā Lapa."
+                           Padding="5,10,5,5"
+                           FontSize="Medium"/>
+                    <Label Text="Ielogojoties sava profilā lietotāju iemetīs galvenajā lapā kurā atrodas grāmatas pēc
+                            dažādām kategorijām, kā jaunākās, populārākās vai augsti novērtētās. Uzspiežot uz kādu no
+                            grāmatām jūs pārmetīs uz pašas grāmatas lapu kur jums būs iespēja redzēt sīkāku informāciju
+                            par grāmatu, lasīt to, saglabāt vēlākai apskatei, kā arī novērtēt grāmatu."
+                           Padding="5,10,5,10"/>
+                    <Label Text="Lietotāja profils."
+                           Padding="5,10,5,5"
+                           FontSize="Medium"/>
+                    <Label Text="Aizejot uz lietotāja profila lapu lietotājs var redzēts sava profila datus, kā lietotājvārdu,
+e-pastu un statusu. Lietotājam tur ir dotas 2 iespējas kuras ir: rediģēt profilu un dzēst profilu.
+Rediģējot profilu kā lietotājam tev būs iespēja mainīt savu lietotājvārdu ja tas nav jau aizņemts.
+Lietotājs var arī nomainīt paroli sākumā apstiprinot ar savu veco paroli. Dzēšot profilu
+lietotājam tam ir jāapstiprina tas process ievadot savu profilu kura rezultātā lietotāju pārmetīs
+atpakaļ uz ielogošanās lapu."
+                           Padding="5,10,5,10"/>
+                    <Label Text="Meklēšanas lapa."
+                           Padding="5,10,5,5"
+                           FontSize="Medium"/>
+                    <Label Text="Aizejot uz meklēšanas lapu lietotājs var ierakstīt laukā noteiktas grāmatas nosaukumu
+un ievadot filtrēšanas laukā tās kategoriju un piespiežot meklēt lietotājam parādīs visas
+grāmatas kuras sakrīt ievadītajiem kritērijiem. Ir iespēja arī meklēt bez kategorijas izvēles.
+Par mums lapa.
+Pārejot lietotājam uz šo lapu viņš var redzēt aplikācijas un mājaslapas rekvizītus un
+sīkāku informāciju par mūsu programmām."
+                           Padding="5,10,5,10"/>
+                    <Label Text="Saglabāto grāmatu lapa."
+                           Padding="5,10,5,5"
+                           FontSize="Medium"/>
+                    <Label Text="Lietotājam pārejot uz saglabāto grāmatu lapu viņām parādīsies visas grāmatas kuras
+viņš ir atzīmējis kā Bookmarked vai Saglabātās grāmatas, lai lietotājs varētu tās atkārtoti
+apskatīt, bez to meklēšanas."
+                           Padding="5,10,5,10"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

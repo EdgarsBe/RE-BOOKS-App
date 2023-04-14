@@ -22,17 +22,15 @@
     </Shell.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar/>
-            <CollectionView>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <Image WidthRequest="100" Source="BookCover"/>
-                            <Label>Nosaukums</Label>
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+            <ScrollView>
+                <StackLayout>
+                    <SearchBar x:Name="Search"/>
+                    <Button Text="Search" Clicked="SearchButton"/>
+                    <StackLayout x:Name="Container">
+
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

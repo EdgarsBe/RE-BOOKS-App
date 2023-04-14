@@ -35,10 +35,24 @@ namespace Testing
             await Shell.Current.GoToAsync($"//{nameof(Login)}");
         }
 
+        private bool _isFirstTime = true;
+
+        public async void OnTap(object sender, EventArgs e)
+        {
+            var tappedImage = (Image)sender;
+            if (tappedImage.ClassId != null)
+            {
+                BookData.BookID = tappedImage.ClassId;
+                await Navigation.PushAsync(new BookPage());
+            } 
+        }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            string connectionString = "Server=6.tcp.eu.ngrok.io;Port=14185;User ID=armands;Password=password;Database=re-books";
+            if (_isFirstTime)
+            {
+            string connectionString = "Server=2.tcp.eu.ngrok.io;Port=11249;User ID=edgars;Password=0000;Database=re-books";
             List<Books> books = new List<Books>();
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -89,6 +103,11 @@ namespace Testing
                         Source = ImageSource.FromUri(new Uri("https://1640-85-254-74-231.au.ngrok.io/" + item.URL))
                     };
 
+                    var tapGestureRecognizer = new TapGestureRecognizer();
+                    tapGestureRecognizer.Tapped += OnTap;
+
+                    image.GestureRecognizers.Add(tapGestureRecognizer);
+
                     var label = new Label
                     {
                         Text = item.Name,
@@ -117,79 +136,86 @@ namespace Testing
             }
 
 
-            using (MySqlConnection connection = new MySqlConnection(connectionString))
-            {
-                connection.Open();
-
-                //Izvelk no datubāzes datus par jaunākajām grāmatām.
-
-                var command = new MySqlCommand("SELECT * FROM books ORDER BY clicks DESC", connection);
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    using (MySqlDataReader reader = command.ExecuteReader())
+                    connection.Open();
+
+                    //Izvelk no datubāzes datus par jaunākajām grāmatām.
+
+                    var command = new MySqlCommand("SELECT * FROM books ORDER BY clicks DESC", connection);
                     {
-                        while (reader.Read())
+                        using (MySqlDataReader reader = command.ExecuteReader())
                         {
-                            Books book = new Books
+                            while (reader.Read())
                             {
-                                ID = reader.GetInt32(0),
-                                Name = reader.GetString(1),
-                                URL = reader.GetString(4)
-                            };
+                                Books book = new Books
+                                {
+                                    ID = reader.GetInt32(0),
+                                    Name = reader.GetString(1),
+                                    URL = reader.GetString(4)
+                                };
 
-                            books.Add(book);
+                                books.Add(book);
+                            }
+                            reader.Close();
                         }
-                        reader.Close();
                     }
+
+                    var Title = new Label()
+                    {
+                        Text = "Populārākais",
+                        Padding = new Thickness(30, 10, 30, 5),
+                        FontSize = 28
+                    };
+                    var stackLayout = new StackLayout()
+                    {
+                        Padding = new Thickness(20, 5, 20, 5),
+                        Orientation = StackOrientation.Horizontal
+                    };
+
+                    foreach (Books item in books)
+                    {
+                        Image image = new Image()
+                        {
+                            ClassId = Convert.ToString(item.ID),
+                            WidthRequest = 100,
+                            HeightRequest = 200,
+                            Margin = new Thickness(0),
+                            Source = ImageSource.FromUri(new Uri("https://1640-85-254-74-231.au.ngrok.io/" + item.URL))
+                        };
+
+                        var tapGestureRecognizer = new TapGestureRecognizer();
+                        tapGestureRecognizer.Tapped += OnTap;
+
+                        image.GestureRecognizers.Add(tapGestureRecognizer);
+
+                        var label = new Label
+                        {
+                            Text = item.Name,
+                        };
+
+                        var view = new StackLayout
+                        {
+                            Padding = new Thickness(5, 0, 5, 0),
+                            Children = { image, label }
+                        };
+
+                        stackLayout.Children.Add(view);
+                    }
+
+                    var scrollView = new ScrollView()
+                    {
+                        Content = stackLayout,
+                        HorizontalScrollBarVisibility = ScrollBarVisibility.Never,
+                        Orientation = ScrollOrientation.Horizontal
+                    };
+
+                    Container.Children.Add(Title);
+                    Container.Children.Add(scrollView);
+                    books.Clear();
+                    connection.Close();
+                    _isFirstTime = false;
                 }
-
-                var Title = new Label()
-                {
-                    Text = "Populārākais",
-                    Padding = new Thickness(30, 10, 30, 5),
-                    FontSize = 28
-                };
-                var stackLayout = new StackLayout()
-                {
-                    Padding = new Thickness(20, 5, 20, 5),
-                    Orientation = StackOrientation.Horizontal
-                };
-
-                foreach (Books item in books)
-                {
-                    Image image = new Image()
-                    {
-                        ClassId = Convert.ToString(item.ID),
-                        WidthRequest = 100,
-                        HeightRequest = 200,
-                        Margin = new Thickness(0),
-                        Source = ImageSource.FromUri(new Uri("https://1640-85-254-74-231.au.ngrok.io/" + item.URL))
-                    };
-
-                    var label = new Label
-                    {
-                        Text = item.Name,
-                    };
-
-                    var view = new StackLayout
-                    {
-                        Padding = new Thickness(5, 0, 5, 0),
-                        Children = { image, label }
-                    };
-
-                    stackLayout.Children.Add(view);
-                }
-
-                var scrollView = new ScrollView()
-                {
-                    Content = stackLayout,
-                    HorizontalScrollBarVisibility = ScrollBarVisibility.Never,
-                    Orientation = ScrollOrientation.Horizontal
-                };
-
-                Container.Children.Add(Title);
-                Container.Children.Add(scrollView);
-                books.Clear();
-                connection.Close();
             }
         }
     }

@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "gE9LyO9Ire9o9JrDqZXvUNe8iYjyTECXNsdxyEq0VcBLT3PtCu3WUXzija/SC/t4DawfE3TYX4VlrQcG+Jg4Qw==",
+  "dgSpecHash": "ClrHkGkvCKQUVHDkzs+j8XBQb65ouGMYHNXno+mbX64Olqpm+nkTuCUWZxGwhaU+zFlpC3Onn+Ykt4RDg4QruA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj",
+  "projectFilePath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\xam.plugin.iconize\\3.5.0.129\\xam.plugin.iconize.3.5.0.129.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\xam.plugin.iconize.fontawesome\\3.5.0.129\\xam.plugin.iconize.fontawesome.3.5.0.129.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\xam.plugin.iconize\\3.5.0.129\\xam.plugin.iconize.3.5.0.129.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\xam.plugin.iconize.fontawesome\\3.5.0.129\\xam.plugin.iconize.fontawesome.3.5.0.129.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Users\\RX 580 8GB\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512"
+    "C:\\Users\\gamin\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512"
   ],
   "logs": []
 }

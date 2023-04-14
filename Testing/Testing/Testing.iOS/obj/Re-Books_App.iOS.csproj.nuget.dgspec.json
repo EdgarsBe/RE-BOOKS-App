@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj": {}
+    "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj": {
+    "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj",
         "projectName": "Re-Books_App.iOS",
-        "projectPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj",
-        "packagesPath": "C:\\Users\\RX 580 8GB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing.iOS\\obj\\",
+        "projectPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.iOS\\Re-Books_App.iOS.csproj",
+        "packagesPath": "C:\\Users\\gamin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\RX 580 8GB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj": {
-                "projectPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj"
+              "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj": {
+                "projectPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj"
               }
             }
           }
@@ -81,20 +81,20 @@
         }
       }
     },
-    "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj": {
+    "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj",
+        "projectUniqueName": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj",
         "projectName": "Re-Books_App",
-        "projectPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj",
-        "packagesPath": "C:\\Users\\RX 580 8GB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RX 580 8GB\\Desktop\\Projects\\Re-books\\RE-BOOKS-App\\Testing\\Testing\\Testing\\obj\\",
+        "projectPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\Re-Books_App.csproj",
+        "packagesPath": "C:\\Users\\gamin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamin\\Desktop\\Projects\\Re-Books-App\\Testing\\Testing\\Testing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\RX 580 8GB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -158,7 +158,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -23,19 +23,13 @@ namespace Testing
 
         //Called variables from xaml entries.
         {
-            string connectionString = "Server=6.tcp.eu.ngrok.io;Port=14185;User ID=armands;Password=password;Database=re-books";
+            string connectionString = "Server=2.tcp.eu.ngrok.io;Port=11249;User ID=edgars;Password=0000;Database=re-books";
             string CEmail = Email.Text;
             string CRepEmail = RepEmail.Text;
             string CUser = Username.Text;
             string CPass = Pass.Text;
             string CRepPass = RepPass.Text;
             bool Admin = false;
-
-            Console.WriteLine(CEmail);
-            Console.WriteLine(CRepEmail);
-            Console.WriteLine(CUser);
-            Console.WriteLine(CPass);
-            Console.WriteLine(CRepPass);
 
             if (CEmail == null || CRepEmail == null || CUser == null || CPass == null || CRepPass == null)
             {

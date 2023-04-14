@@ -20,3 +20,26 @@ C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testi
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Login.xaml.g.cs
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Register.xaml.g.cs
 C:\Users\RX 580 8GB\Desktop\Projects\Re-books\RE-BOOKS-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\Bookmarked.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\bin\Debug\netstandard2.0\Re-Books_App.deps.json
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\bin\Debug\netstandard2.0\Re-Books_App.dll
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\bin\Debug\netstandard2.0\ref\Re-Books_App.dll
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\bin\Debug\netstandard2.0\Re-Books_App.pdb
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Re-Books_App.csproj.AssemblyReference.cache
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Re-Books_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Login.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Navigation.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Register.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\AboutUsPage.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\Bookmarked.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\SearchPage.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Views\UserProfile.xaml.g.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Re-Books_App.AssemblyInfoInputs.cache
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Re-Books_App.AssemblyInfo.cs
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Re-Books_App.csproj.CoreCompileInputs.cache
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Re-Books_App.dll
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\ref\Re-Books_App.dll
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\Re-Books_App.pdb
+C:\Users\gamin\Desktop\Projects\Re-Books-App\Testing\Testing\Testing\obj\Debug\netstandard2.0\BookPage.xaml.g.cs

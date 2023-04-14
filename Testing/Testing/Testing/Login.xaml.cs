@@ -33,7 +33,7 @@ namespace Testing
 
         public void LoginClick(object sender, EventArgs e)
         {
-            string connectionString = "Server=6.tcp.eu.ngrok.io;Port=14185;User ID=armands;Password=password;Database=re-books";
+            string connectionString = "Server=2.tcp.eu.ngrok.io;Port=11249;User ID=edgars;Password=0000;Database=re-books";
             string EnteredUsername = usernameInput.Text;
             string EnteredPassword = passwordInput.Text;
 

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Testing.BookPage"
+             Shell.FlyoutBehavior="Disabled"
+             BackgroundColor="#8d99ae">
+    <Shell.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Style="{StaticResource TopBar}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Re-" TextColor="White"/>
+                        <Span Text="Books" TextColor="#5383d3"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+    </Shell.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Image x:Name="Image" Source="BookCover.jpg" WidthRequest="240" Margin="10"/>
+                    <Label x:Name="Title" Text="" Padding="15,0,0,0"/>
+                    <Label x:Name="Author" Text="" Padding="15,0,0,0"/>
+                    <Label x:Name="Description" Text="" Padding="15,0,0,20"/>
+                    <Button Text="Read"/>
+                    <Button Text="Save" Clicked="Saveing"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
